@@ -1,12 +1,126 @@
-# 💫 About Me:
-🔭 Mern Stack Developer<br>🌱 currently learning Next Js<br>💬 BTech CSE Student<br>
+<div align="center">
 
+# Sayan Das
+### Full Stack Developer · TypeScript · React · Node.js
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/imsayan_24) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sayandas24) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:sayandas.workmail@gmail.com) 
+I ship production systems — real-time, multi-tenant, AI-powered — that solve problems people actually have.
 
-# 💻 Tech Stack:
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sayandas24)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://sayanthisis.vercel.app/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sayandas.workmail@gmail.com)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/sayandas24)
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+**3 production apps shipped · 7 months · 1st place tech fest · Top 10 at Jadavpur University IIC Challenge**
+
+</div>
+
+---
+
+## What I build
+
+Full stack systems with a frontend-first mindset — real-time sync, multi-tenant architecture, offline-first data, AI integrations. I own features end-to-end: UI, API design, database schema, and deployment. No handoffs.
+
+**Core stack:** TypeScript · React · Next.js · TanStack · Node.js · Express · MySQL · MongoDB · Redis · WebSockets · Docker
+
+---
+
+## Projects
+
+---
+
+### 🏆 Delycia — Multi-Tenant Restaurant Management SaaS
+> **1st place, Brain Maniac Tech Fest 2025** (70+ teams) · **Top 10, IIC Prototype Challenge 2025** (120+ submissions, Jadavpur University)
+
+Small restaurants in India run on pen-paper orders, WhatsApp menus, and manual billing. Delycia replaces all of it.
+
+**Three apps, one backend:**
+- **Customers** — scan QR code → browse menu → place order → track it live
+- **Staff** — see incoming orders in real-time → update kitchen status → manage tables
+- **Owners** — dashboard analytics, CRM, inventory, subscriptions, multi-restaurant management
+
+**What I engineered:**
+
+- **25% faster order processing** — optimized data handling and streamlined kitchen-to-waiter communication via WebSockets
+- **Zero paper errors** — QR-enabled ordering with live Socket.IO order status pushed to kitchen and waiter screens simultaneously
+- **Multi-device auth without friction** — built a `withAuth()` BFF wrapper that detects expired tokens, refreshes them, and retries the original request transparently. User never notices.
+- **Concurrent refresh deduplication** — built a `RefreshCoordinator` singleton: if 5 API calls fail at once due to expired token, exactly 1 refresh fires — not 5
+- **Redis caching layer** — token caching (5s TTL) cut backend auth load ~80%. Designed with graceful degradation: if Redis goes down, the app keeps running
+- **Zero schema changes to onboard new restaurants** — multi-tenant architecture scoped every query by `restaurant_id` from day one
+- **8 roles, 3 apps, 1 backend** — role-based access from Customer to SuperAdmin, all sharing one Express API
+
+`TanStack Start` `TanStack Query` `Zustand` `Tailwind CSS` `Radix UI` `Node.js` `Express` `MariaDB` `Redis` `Socket.IO` `JWT` `Docker` `Hostinger VPS`
+
+---
+
+### 🤖 AI Interview Prep & Resume Generator
+> Upload resume + job description → ranked preparation roadmap in under 30 seconds
+
+- **100% valid AI output** — enforced strict schema on every Google Gemini API call, zero malformed responses
+- **Hours → 30 seconds** — automated resume parsing, skill mapping, and gap analysis end-to-end
+- **ATS-optimized resume generation** — JWT-secured, user-isolated REST APIs, zero data leakage between accounts
+
+`React` `TypeScript` `Tailwind CSS` `Node.js` `Google Gemini API` `MongoDB` `Puppeteer` `JWT`
+
+---
+
+### 💊 Pharmacy Inventory & POS System
+> Offline-first pharmacy management with barcode scanning and multi-branch ops
+
+- **99% uptime during network outages** — offline-first sync layer via PowerSync eliminated single points of failure
+- **Medicine lookup under 2 seconds** — camera-based barcode scanning replaced slow manual search
+- **Expiry loss prevention** — automated stock alerts at 15, 30, and 90-day thresholds
+- Multi-branch operations, role-based access, POS billing, and sales analytics from one deployment
+
+`Next.js` `React` `TypeScript` `Supabase` `PowerSync` `Kysely` `Tailwind CSS` `Recharts`
+
+---
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| **Frontend** | React · Next.js · TanStack Start · TanStack Query · TypeScript · Tailwind CSS · Zustand · Redux · Radix UI |
+| **Backend** | Node.js · Express.js · REST API · WebSockets · Socket.IO |
+| **Database** | MySQL · MariaDB · MongoDB · Redis · Supabase |
+| **Auth & Security** | JWT · httpOnly cookies · CSRF protection · bcrypt · Rate limiting |
+| **AI & Integrations** | Google Gemini API · Puppeteer · Twilio · PowerSync |
+| **DevOps & Tools** | Docker · Docker Compose · VPS deployment · Vercel · Git |
+
+---
+
+## Achievements
+
+🥇 **1st Place — Brain Maniac Tech Fest 2025** · Built Delycia (multi-tenant restaurant SaaS) · ranked 1st among 70+ teams
+
+🏅 **Top 10 — IIC Prototype Innovation to Entrepreneurship Challenge 2025** · 30 finalists from 120+ submissions · organized by IIC & National Council of Education, Bengal · Jadavpur University
+
+---
+
+## Stats
+
+<div align="center">
+
+![Sayan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=sayandas24&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sayandas24&layout=compact&theme=github_dark&hide_border=true&langs_count=8)
+
+</div>
+
+---
+
+## Currently
+
+- 🎓 3rd year B.Tech CSE · Camellia Institute of Engineering and Technology (MAKAUT)
+- 🔍 Open to **full-time and internship roles** in full stack / frontend development
+- 🚀 Building production systems that solve real problems — shipping weekly
+- 🧠 Going deeper on system design, distributed systems, and DevOps
+
+---
+
+<div align="center">
+
+**Let's build something that matters.**
+
+[sayandas.workmail@gmail.com](mailto:sayandas.workmail@gmail.com) · [linkedin.com/in/sayandas24](https://linkedin.com/in/sayandas24) · [sayanthisis.vercel.app](https://sayanthisis.vercel.app/)
+
+</div>
