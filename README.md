@@ -94,19 +94,6 @@ Small restaurants in India run on pen-paper orders, WhatsApp menus, and manual b
 
 🏅 **Top 10 — IIC Prototype Innovation to Entrepreneurship Challenge 2025** · 30 finalists from 120+ submissions · organized by IIC & National Council of Education, Bengal · Jadavpur University
 
----
-
-## Stats
-
-<div align="center">
-
-![Sayan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=sayandas24&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sayandas24&layout=compact&theme=github_dark&hide_border=true&langs_count=8)
-
-</div>
-
----
 
 ## Currently
 
